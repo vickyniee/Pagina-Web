@@ -157,7 +157,7 @@ function showSlides(n) {
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/vickyniee/Pagina-Web)
 
-[![Youtube](https://www.freepik.com/free-psd/social-media-logo-design_150897945.htm#fromView=keyword&page=1&position=0&uuid=21844925-8e91-4413-92d9-a6bc6f88e49c&query=Youtube+Logo+Png)
+[![Youtube]] (https://www.youtube.com/channel/UCuBMlgJvj38qlmplkCD2dmA) 
 
 
 
