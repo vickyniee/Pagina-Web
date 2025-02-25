@@ -1,0 +1,326 @@
+html{
+    font-size:62.5% ;
+    font-family: "Poppins" , sans-serif;
+    margin: 0;
+}
+
+.header {
+ display: flex;
+ justify-content: space-between;
+ height: 70%;
+    overflow: hidden;
+    background-color: #674dff;
+    padding: 20px 10px;
+  }
+  .logo{
+    display: flex;
+  }
+  .logo img{
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+
+
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+ 
+  .header a:hover {
+    background-color: #ff5100;
+    color: rgb(255, 255, 255);
+  }
+
+  .header a.active {
+    background-color: #ff5100;
+    color: white;
+  }
+  
+
+  .header-right {
+    float: right;
+  }
+
+
+
+   /* responsive, cuando la pantalla tenga 500 píxeles de ancho o menos, esto lo que hara es q se apilen los enlaces uno encima del otro para que quepan*/
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+
+
+  * {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #ff0000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #000000;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.heading-1{
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.global-products{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+
+}
+
+.container-options{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container-options span{
+  color: #000000;
+  background-color: #ff3300f1;
+  padding: .7rem 3rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.container-options span:hover{
+  background-color: var(--primary-color);
+  color: rgb(0, 0, 0);
+}
+
+.container-options span.active{
+  background-color: var(--primary-color);
+  color: rgb(255, 0, 0);
+}
+
+.container-products{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+  gap: 3rem;
+}
+
+.card-product{
+  background-color: #674dff;
+  padding: 2rem 2rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.603);
+}
+
+.container-img{
+  position: relative;
+}
+
+.container-img img{
+  width: 100%;
+}
+
+.container-img .discount{
+  position: absolute;
+  left: 0;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2px 1.2rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+}
+
+.card-product:hover .discount{
+  color: #ff0000;
+
+}
+
+.button-group{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top: 0;
+  right: -2rem;
+  cursor: pointer;
+  z-index: -1;
+  transition: all .4s ease;
+}
+
+.button-group span{
+  border: 1px solid var(--primary-color);
+  padding: .8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+.button-group span:hover{
+  background-color: #000;
+}
+
+.card-product:hover .button-group{
+  z-index: 0;
+  right: -1rem;
+
+}
+
+.content-card-product{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, min-content);
+  row-gap: 1rem;
+}
+.content-card-product h3{
+  grid-row: 2/3;
+  grid-column: 1/-1;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.content-card-product h3:hover{
+  color: #ffffff;
+}
+
+.add-cart{
+  justify-self: start;
+  border: 2px solid #ff3300;
+  padding: 2rem;
+  border-radius: 100%;
+  cursor: pointer;
+  transform: all .4s ease;
+
+  display:flex ;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-cart:hover{
+  background-color: #ff3300;
+}
+
+
+.content-card-product .price{
+  justify-self: end;
+  align-self: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.content-card-product .price span{
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: line-through;
+  color: #ff0000;
+  margin-left: .5rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #674dff;
+  color: rgb(0, 0, 0);
+  margin: 0;
+}
