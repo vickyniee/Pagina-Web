@@ -32,6 +32,7 @@ Pagina Web realizada por Alejandro vargas, Yuliana Abreu y Victoria Rangel
 Para dudas o acontecimientos; rangelperezva@uvm.edu.ve
 
 ## Uso y ejemplos/Explicacion del codigo
+
  *javascript*
 ```javascript
 let slideIndex = 1;
@@ -126,14 +127,10 @@ function showSlides(n) {
  
 ```
 **Etiquetas html, cremos secciones para separar las partes entre si, dentro de esta creamos las clases dentro de los divs, agregamos lo que era referente en cada seccion para cada uno, img, los dots, etc**
+ -- --- --- --- --
 
 
-## Support
 
-Para dudas o acontecimientos; rangelperezva@uvm.edu.ve
-
-
-## Uso y ejemplos/Explicacion del codigo
  *css*
 ```css
 * responsive, cuando la pantalla tenga 500 píxeles de ancho o menos, esto lo que hara es q se apilen los enlaces uno encima del otro para que quepan*/
@@ -150,6 +147,22 @@ Para dudas o acontecimientos; rangelperezva@uvm.edu.ve
 ```
 
 **con las demas etiquetas lo que hicimos fue darle estilos a cada uno de ellos; letras, titulos, logo, menu, etc**
+
+
+## Autores
+
+- [@vickyniee , @yulianabreuc  , @Alegabriel232310](https://github.com/vickyniee , https://github.com/yulianabreuc , https://github.com/Alegabriel232310 )
+
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/vickyniee/Pagina-Web)
+
+[![Youtube](https://www.freepik.com/free-psd/social-media-logo-design_150897945.htm#fromView=keyword&page=1&position=0&uuid=21844925-8e91-4413-92d9-a6bc6f88e49c&query=Youtube+Logo+Png)
+
+
+
+
+
 
 
     
